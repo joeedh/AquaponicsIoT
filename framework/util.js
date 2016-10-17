@@ -2,7 +2,7 @@
 var _util = undefined;
 
 define([
-  "polyfill", "typesystem"
+  "./polyfill", "./typesystem"
 ], function(unused, typesystem) {
   "use strict";
 

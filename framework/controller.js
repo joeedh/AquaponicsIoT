@@ -2,7 +2,7 @@
 var _controller = undefined;
 
 
-var deps = (typeof IS_NODE != 'undefined' && IS_NODE) ? ['util'] : ['util', 'dat'];
+var deps = (typeof IS_NODE != 'undefined' && IS_NODE) ? ['./util'] : ['./util', './dat'];
 
 define(deps, function(util, unused_dat) {
   "use strict";
@@ -87,6 +87,14 @@ define(deps, function(util, unused_dat) {
     panel(name) {
       this.panels[name] = new GUI(name, this.appstate, this.dat.addFolder(name));
       return this.panels[name];
+    }
+
+    open() {
+      this.dat.closed = false;
+    }
+
+    close() {
+      this.dat.closed = true;
     }
 
     destroy() {
@@ -190,6 +198,40 @@ define(deps, function(util, unused_dat) {
       }
 
       return this.dat.add(obj, name);
+    }
+
+    enum(name, path, enumobj) {
+      if (arguments.length < 3)
+        throw new Error("not enough arguments to GUI.enum()");
+
+      var arr = [];
+      for (var k in enumobj) {
+        arr.push(k);
+      }
+
+      var wrap = {};
+      var this2 = this;
+
+      Object.defineProperty(wrap, name, {
+        get : function() {
+          var prop = parsePath(this2.ctx, path);
+          return prop.value;
+        },
+
+        set : function(val) {
+          var prop = parsePath(this2.ctx, path);
+          prop.set(val);
+        }
+      })
+
+      var prop = parsePath(this.ctx, path);
+      var ret = this.dat.add(wrap, name, arr);
+
+      if (prop.description !== undefined) {
+        ret.description(prop.description);
+      }
+
+      return ret;
     }
   }
   

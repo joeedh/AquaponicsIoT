@@ -3,12 +3,60 @@
 var _client = undefined;
 
 define([
-    
-], function() {
+  "framework/util", "framework/controller"
+], function(util, controller) {
     'use strict';
     
     var exports = _client = {};
-    
+
+    var GraphLayout = exports.GraphLayout = class GraphLayout {
+      constructor() {
+        this.size = [0, 0];
+        this.graphs = [];
+      }
+
+      add(graph) {
+        this.graphs.push(graph);
+      }
+
+      remove(graph) {
+        this.graphs.remove(graph);
+      }
+
+      draw(canvas, g) {
+        for (var graph of this.graphs) {
+          graph.draw(g);
+        }
+
+        this.drawLegend(canvas, g);
+      }
+
+      drawLegend(canvas, g) {
+        var x = 1.05;
+        var y = 0.5;
+
+        g.save();
+        g.lineWidth *= 5.0;
+        g.font="50px Ariel";
+
+        for (var graph of this.graphs) {
+          var w = 0.4, h = 0.05;
+
+          _appstate.drawText(g, graph.name, x, y, graph.color);
+
+          y += 0.1;
+        }
+
+        g.restore();
+      }
+
+      update(appstate) {
+        for (var graph of this.graphs) {
+          graph.update(appstate);
+        }
+      }
+    }
+
     var unit = exports.unit = function unit(name, xscale, yscale) {
         var ret = {};
         
@@ -77,6 +125,27 @@ define([
             g.stroke();
             g.restore();
         }
+
+      update(appstate) {
+        var graph = this;
+
+        appstate.api.command("getFieldRecent", {field : this.name, count : 50}).then(
+          function(res) {
+            var data = [];
+            var i = 0;
+
+            for (var d of res){
+              var x = i; //(res.time - start) / 1000;
+              var y = d.value;
+
+              data.push([x, y]);
+              i++;
+            }
+
+            graph.setData(data);
+            window.redraw_all();
+          });
+      }
     }
     
     exports.APIClient = class APIClient {
@@ -84,13 +153,35 @@ define([
             this.ws = ws;
             this.clients = {};
             this.idgen = 0;
+
+            this.queue = [];
             
             var this2 = this;
             this.ws.onmessage = function(msg) {
                 this2.on_message.apply(this2, arguments);
             }
         }
-        
+
+        flush() {
+          try {
+            for (var msg of this.queue) {
+              this.ws.send(msg);
+            }
+
+            this.queue = [];
+          } catch(msg) {
+            console.log("failed to flush queue");
+          }
+        }
+
+       _send(msg) {
+         if (this.ws.readyState != 1) {
+           this.queue.push(msg);
+         } else {
+           this.ws.send(msg);
+         }
+       }
+
         command(cmd, args) {
             args = args === undefined ? {} : args;
             
@@ -108,8 +199,8 @@ define([
             cmd.promise = new Promise(function(accept, reject) {
                 cmd.accept = accept;
                 cmd.reject = reject;
-                
-                this2.ws.send(JSON.stringify(cmd));
+
+                this2._send(JSON.stringify(cmd));
             });
             
             return cmd.promise;
@@ -137,15 +228,22 @@ define([
             this.clients[id].accept(data.data);
             delete this.clients[id];
         }
+
+        update() {
+          if (this.ws.readyState == 1) {
+            this.flush();
+          }
+        }
     }
     
     exports.AppState = class AppState {
         constructor() {
+            this.alarms = {};
+            this.manager = new GraphLayout();
             this.canvas = document.getElementById("temperature");
             this.size = [this.canvas.width, this.canvas.height];
             this.g = this.canvas.getContext("2d"); //draw context
             
-            this.graphs = {};
             this.ws = new WebSocket("ws://" + document.location.host + "/data");
             
             this.api = new exports.APIClient(this.ws);
@@ -155,41 +253,108 @@ define([
             this.addGraph(new Graph("PH", Units.C_TIME, "orange"));
             this.addGraph(new Graph("ORP", Units.C_TIME, "red"));
             //this.graphs["Temp"].setData([[0, 1], [1, 100], [2, 12], [3, 88], [4, 72], [5, -66]]);
+
+            this.makeGUI();
         }
-        
-        updateGraph(field) {
-            var graph = this.graphs[field];
-            this.api.command("getFieldRecent", {field : field, count : 50}).then(
-                
-            function(res) {
-                var data = [];
-                var i = 0;
-                
-                for (var d of res){
-                    var x = i; //(res.time - start) / 1000;
-                    var y = d.value;
-                    
-                    data.push([x, y]);
-                    i++;
-                }
-                
-                graph.setData(data);
-                window.redraw_all();
-            });
+
+        _fieldsEnum() {
+          var ret = {};
+
+          for (var graph of this.manager.graphs) {
+            ret[graph.name] = graph.name;
+          }
+
+          return ret;
         }
-        
-        updateGraphs() {
-            for (var k in this.graphs) {
-                this.updateGraph(k);
+
+        makeGUI() {
+          this._new_alarm_name = "";
+          this._new_alarm_field = "";
+          this._new_alarm_trigger = 0;
+          this._new_alarm_cmp = "<";
+
+          if (this.gui !== undefined) {
+            this.gui.destroy();
+            this.gui = undefined;
+          }
+
+          this.gui = new controller.GUI("Options", this);
+          var panel = this.gui.panel("Alarms");
+          panel.open();
+
+          var panel2 = panel.panel("New Alarm");
+          panel2.open();
+
+          var CmpEnum = {
+            ">" : ">",
+            "<" : "<"
+          };
+
+          panel2.textbox("Name", "appstate._new_alarm_name");
+          panel2.enum("Field", "appstate._new_alarm_field", this._fieldsEnum());
+          panel2.slider("Trigger", "appstate._new_alarm_trigger", -500, 800);
+          panel2.enum("Mode", "appstate._new_alarm_cmp", CmpEnum);
+
+          panel2.button("Create Alarm", function() {
+          }, this);
+
+          var this2 = this;
+
+          this.api.command("getAlarms").then(function(alarms) {
+            this2.alarms = alarms;
+            this2._alarms = {};
+
+            //dumb hack.  this version of my controller.js doesn't have
+            //lists property implemented.
+            //so sick of writing these stupid controller.js libraries.
+
+            //so, convert to an object with sanitized names
+            for (var k in alarms) {
+              k = k.replace(/[ \n\r\t\b\v-+:<>/\&!@#$%]/g, "_");
+              this2._alarms[k] = alarms[k];
             }
+
+            console.log("alarms", alarms);
+
+            function bind(k) {
+              var alarm = this2._alarms[k1];
+              var k = alarm.name;
+
+              var panel2 = panel.panel(k);
+              panel2.open();
+
+              var path = "appstate._alarms." + k;
+              panel2.enum("Field", path + ".field", this2._fieldsEnum());
+              panel2.slider("Trigger", path + ".trigger", -500, 800);
+              panel2.enum("Mode", path + ".cmp", CmpEnum);
+              panel2.textbox("Phone #", path + ".phone");
+              panel2.textbox("Email", path + ".email");
+              panel2.textbox("Message", path + ".message");
+
+              panel2.button("Save", function() {
+                console.log("saving alarm ", alarm.name);
+                this2.api.command("addAlarm", alarm).then(function() {
+                  console.log("Successfully updated alarm", alarm.name);
+                });
+              })
+            }
+
+            for (var k1 in this2._alarms) {
+              bind(k);
+            }
+          });
+        }
+
+        updateGraphs() {
+           this.manager.update(this);
         }
         
         addGraph(graph) {
-            this.graphs[graph.name] = graph;
+            this.manager.add(graph);
         }
         
         removeGraph(graph) {
-            delete this.graphs[graph.name];
+          this.manager.remove(graph);
         }
         on_resize() {
             
@@ -209,7 +374,16 @@ define([
                 this.on_resize();
             }
         }
-        
+
+        drawText(g, text, x, y, color) {
+          g.fillStyle = g.strokeStyle = color;
+
+          var scale = _appstate.size[0];
+          g.scale(1/scale, -1/scale);
+          g.fillText(text, x*scale, y*-scale);
+          g.scale(scale, -scale);
+        }
+
         draw() {
             var g = this.g;
             
@@ -228,12 +402,9 @@ define([
             g.beginPath();
             g.rect(0, 0, 1, 1);
             g.stroke();
-            
-            for (var k in this.graphs) {
-                var graph = this.graphs[k];
-                graph.draw(g);
-            }
-            
+
+            this.manager.draw(this.canvas, g);
+
             g.restore();
         }
     }
@@ -259,6 +430,7 @@ define([
     
     setInterval(function() {
         _appstate.updateGraphs();
+        _appstate.api.update();
     }, 550);
     
     return exports;
