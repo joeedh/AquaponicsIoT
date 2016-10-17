@@ -17,8 +17,8 @@
         "name": "Aquaponicwebserver.xdk"
       },
       "Aquaponicwebserver.xdke": {
-        "previousModTime": 1476401462281,
-        "modified": 1476401462281,
+        "previousModTime": 1476744487004,
+        "modified": 1476744487004,
         "seen": true,
         "name": "Aquaponicwebserver.xdke"
       },
@@ -35,14 +35,14 @@
         "name": "lightsensor.html"
       },
       "main.js": {
-        "previousModTime": 1476401367889,
-        "modified": 1476401367889,
+        "previousModTime": 1476744315870,
+        "modified": 1476744315870,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1475872414910,
-        "modified": 1475872414910,
+        "previousModTime": 1476736463714,
+        "modified": 1476736463714,
         "seen": true,
         "name": "package.json"
       },
@@ -71,8 +71,8 @@
         "name": "const.js"
       },
       "db.js": {
-        "previousModTime": 1476399765171,
-        "modified": 1476399765171,
+        "previousModTime": 1476744139945,
+        "modified": 1476744139945,
         "seen": true,
         "name": "db.js"
       },
@@ -83,8 +83,8 @@
         "name": "tinyrequire_node.js"
       },
       "wsock.js": {
-        "previousModTime": 1476399269999,
-        "modified": 1476399269999,
+        "previousModTime": 1476744127201,
+        "modified": 1476744127201,
         "seen": true,
         "name": "wsock.js"
       },
@@ -107,14 +107,14 @@
         "name": "framework/compiled_numeric.js"
       },
       "framework/console.js": {
-        "previousModTime": 1475872462725,
-        "modified": 1475872462725,
+        "previousModTime": 1476740857287,
+        "modified": 1476740857287,
         "seen": true,
         "name": "framework/console.js"
       },
       "framework/controller.js": {
-        "previousModTime": 1475872462732,
-        "modified": 1475872462732,
+        "previousModTime": 1476740842885,
+        "modified": 1476740842885,
         "seen": true,
         "name": "framework/controller.js"
       },
@@ -137,8 +137,8 @@
         "name": "framework/d3.zip"
       },
       "framework/dat.js": {
-        "previousModTime": 1475872462742,
-        "modified": 1475872462742,
+        "previousModTime": 1476740849827,
+        "modified": 1476740849827,
         "seen": true,
         "name": "framework/dat.js"
       },
@@ -221,8 +221,8 @@
         "name": "framework/parseutil.js"
       },
       "framework/polyfill.js": {
-        "previousModTime": 1475872462818,
-        "modified": 1475872462818,
+        "previousModTime": 1476740884890,
+        "modified": 1476740884890,
         "seen": true,
         "name": "framework/polyfill.js"
       },
@@ -299,14 +299,14 @@
         "name": "framework/trigrid.js"
       },
       "framework/typesystem.js": {
-        "previousModTime": 1475872462883,
-        "modified": 1475872462883,
+        "previousModTime": 1476740818922,
+        "modified": 1476740818922,
         "seen": true,
         "name": "framework/typesystem.js"
       },
       "framework/util.js": {
-        "previousModTime": 1475872462887,
-        "modified": 1475872462887,
+        "previousModTime": 1476740905061,
+        "modified": 1476740905061,
         "seen": true,
         "name": "framework/util.js"
       },
@@ -329,8 +329,8 @@
         "name": "framework/shaders/simple.glsl"
       },
       "client.js": {
-        "previousModTime": 1476401473121,
-        "modified": 1476401473121,
+        "previousModTime": 1476744481955,
+        "modified": 1476744481955,
         "seen": true,
         "name": "client.js"
       },
@@ -339,12 +339,188 @@
         "modified": 1476394161485,
         "seen": true,
         "name": "require.js"
+      },
+      ".gitignore": {
+        "previousModTime": 1476491064219,
+        "modified": 1476491064219,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "addreviations.md": {
+        "previousModTime": 1476736701456,
+        "modified": 1476736701456,
+        "seen": true,
+        "name": "addreviations.md"
+      },
+      "alarms.json": {
+        "previousModTime": 1476744387488,
+        "modified": 1476744387488,
+        "seen": true,
+        "name": "alarms.json"
+      },
+      "config.js": {
+        "previousModTime": 1476740687125,
+        "modified": 1476740687125,
+        "seen": true,
+        "name": "config.js"
+      },
+      "connect_ssh.sh": {
+        "previousModTime": 1476486213627,
+        "modified": 1476486213627,
+        "seen": true,
+        "name": "connect_ssh.sh"
+      },
+      "events.js": {
+        "previousModTime": 1476744240877,
+        "modified": 1476744240877,
+        "seen": true,
+        "name": "events.js"
+      },
+      "homemartinaquaponicaquaponic.log": {
+        "previousModTime": 1476738573835,
+        "modified": 1476738573835,
+        "seen": true,
+        "name": "homemartinaquaponicaquaponic.log"
+      },
+      "logger.js": {
+        "previousModTime": 1476740696384,
+        "modified": 1476740696384,
+        "seen": true,
+        "name": "logger.js"
+      },
+      "logger.jss.js": {
+        "previousModTime": 1476737052662,
+        "modified": 1476737052662,
+        "seen": true,
+        "name": "logger.jss.js"
+      },
+      "log_debug.txt": {
+        "previousModTime": 1476739224612,
+        "modified": 1476739224612,
+        "seen": true,
+        "name": "log_debug.txt"
+      },
+      "log_error.txt": {
+        "previousModTime": 1476737798537,
+        "modified": 1476737798537,
+        "seen": true,
+        "name": "log_error.txt"
+      },
+      "log_log.txt": {
+        "previousModTime": 1476739224609,
+        "modified": 1476739224609,
+        "seen": true,
+        "name": "log_log.txt"
+      },
+      "postupload.sh": {
+        "previousModTime": 1476488466885,
+        "modified": 1476488466885,
+        "seen": true,
+        "name": "postupload.sh"
+      },
+      "sensors.log": {
+        "previousModTime": 1476739227629,
+        "modified": 1476739227629,
+        "seen": true,
+        "name": "sensors.log"
+      },
+      "sim.js": {
+        "previousModTime": 1476738679762,
+        "modified": 1476738679762,
+        "seen": true,
+        "name": "sim.js"
+      },
+      "sms.js": {
+        "previousModTime": 1476740700646,
+        "modified": 1476740700646,
+        "seen": true,
+        "name": "sms.js"
+      },
+      "tar.out": {
+        "previousModTime": 1476487429843,
+        "modified": 1476487429843,
+        "seen": true,
+        "name": "tar.out"
+      },
+      "upload.bat": {
+        "previousModTime": 1476487584597,
+        "modified": 1476487584597,
+        "seen": true,
+        "name": "upload.bat"
+      },
+      "upload.sh": {
+        "previousModTime": 1476486695746,
+        "modified": 1476486695746,
+        "seen": true,
+        "name": "upload.sh"
+      },
+      ".idea/.name": {
+        "previousModTime": 1476485920762,
+        "modified": 1476485920762,
+        "seen": true,
+        "name": ".idea/.name"
+      },
+      ".idea/Aquaponicwebserver.iml": {
+        "previousModTime": 1476486026760,
+        "modified": 1476486026760,
+        "seen": true,
+        "name": ".idea/Aquaponicwebserver.iml"
+      },
+      ".idea/deployment.xml": {
+        "previousModTime": 1476485920919,
+        "modified": 1476485920919,
+        "seen": true,
+        "name": ".idea/deployment.xml"
+      },
+      ".idea/encodings.xml": {
+        "previousModTime": 1476485920871,
+        "modified": 1476485920871,
+        "seen": true,
+        "name": ".idea/encodings.xml"
+      },
+      ".idea/jsLibraryMappings.xml": {
+        "previousModTime": 1476486026807,
+        "modified": 1476486026807,
+        "seen": true,
+        "name": ".idea/jsLibraryMappings.xml"
+      },
+      ".idea/misc.xml": {
+        "previousModTime": 1476485932084,
+        "modified": 1476485932084,
+        "seen": true,
+        "name": ".idea/misc.xml"
+      },
+      ".idea/modules.xml": {
+        "previousModTime": 1476485920902,
+        "modified": 1476485920902,
+        "seen": true,
+        "name": ".idea/modules.xml"
+      },
+      ".idea/vcs.xml": {
+        "previousModTime": 1476492221190,
+        "modified": 1476492221190,
+        "seen": true,
+        "name": ".idea/vcs.xml"
+      },
+      ".idea/watcherTasks.xml": {
+        "previousModTime": 1476489099753,
+        "modified": 1476489099753,
+        "seen": true,
+        "name": ".idea/watcherTasks.xml"
+      },
+      ".idea/workspace.xml": {
+        "previousModTime": 1476740958391,
+        "modified": 1476740958391,
+        "seen": true,
+        "name": ".idea/workspace.xml"
+      },
+      ".idea/libraries/Aquaponicwebserver_node_modules.xml": {
+        "previousModTime": 1476486026894,
+        "modified": 1476486026894,
+        "seen": true,
+        "name": ".idea/libraries/Aquaponicwebserver_node_modules.xml"
       }
     },
-    "boardFileStatus": {
-      "client.js": {
-        "previousModTime": 1476401479674
-      }
-    }
+    "boardFileStatus": {}
   }
 }

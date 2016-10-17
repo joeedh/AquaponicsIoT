@@ -1,4 +1,4 @@
-
+ 
 function isNode() {
   return typeof IS_NODE != "undefined" && IS_NODE;
 }

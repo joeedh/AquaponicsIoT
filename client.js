@@ -296,6 +296,18 @@ define([
           panel2.enum("Mode", "appstate._new_alarm_cmp", CmpEnum);
 
           panel2.button("Create Alarm", function() {
+            var alarm = {
+                trigger : _appstate._new_alarm_trigger,
+                cmp : _appstate._new_alarm_cmp,
+                field : _appstate._new_alarm_field,
+                name : _appstate._new_alarm_name
+            };
+              
+            console.log("saving alarm ", alarm.name);
+            this2.api.command("addAlarm", alarm).then(function() {
+              console.log("Successfully updated alarm", alarm.name);
+              _appstate.makeGUI();
+            });
           }, this);
 
           var this2 = this;

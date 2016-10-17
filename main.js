@@ -1,5 +1,6 @@
 global.window = global.self = global;
 
+var events = require('./events');
 var logger = require('./logger');
 var sms = require('./sms');
 var config = require('./config');
@@ -127,6 +128,7 @@ function read_sensors() {
 //    console.log(temp);
 
 //    read_temp();
+  var time_as_num = (new Date()).valueOf();
   var ph = read_ph();
   var orp = read_orp();
 
