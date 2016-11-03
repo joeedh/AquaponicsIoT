@@ -2,11 +2,17 @@
 //this is for debugging purposes only, do not reference this variable in code
 var _client = undefined;
 
+requirejs.config({
+  waitSeconds : 45
+});
+
 define([
   "framework/util", "framework/controller"
 ], function(util, controller) {
     'use strict';
-    
+
+    console.log("started");
+
     var exports = _client = {};
 
     var GraphLayout = exports.GraphLayout = class GraphLayout {

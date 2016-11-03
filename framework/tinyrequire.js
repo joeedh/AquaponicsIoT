@@ -41,7 +41,7 @@ window.tinyrequire = {
     var defined = false;
     var depcb = undefined;
 
-    window.define = function define(deps, callback) {
+    var definecb = window.define = tinyrequire._define = function define(deps, callback) {
       window.define = undefined;
 
       defined = true;
@@ -61,13 +61,16 @@ window.tinyrequire = {
     //var timer = window.setInterval(function() {
     //  window.clearInterval(timer);
 
-      var path = "/scripts/" + name + ".js"; //script;
+      var path = name + ".js"; //script;
+      if (path.startsWith("./")) {
+        path = "/framework/" + path.slice(2, path.length);
+        name = name.slice(2, name.length);
+      }
+
       var node = document.createElement("script");
 
-      delete node.async;
-      node.src = path;
-
       function bind(name) {
+        console.log("loaded");
         return function() {
           this2.loaded[name] = 1;
           delete this2.queued[name];
@@ -94,6 +97,8 @@ window.tinyrequire = {
         }
       }
 
+      delete node.async;
+      node.src = path;
       node.onload = bind(name);
       document.head.appendChild(node);
     //}, 50);
