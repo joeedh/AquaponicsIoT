@@ -1,8 +1,8 @@
 "use strict";
 
-var wsock = require('./wsock');
+var db_abstract = require('./db_abstract');
 var fs = require('fs');
-var ALARMFILE = "./alarms.json";
+var ALARMFILE = require('./config').ALARMFILE;
 
 class Alarm {
   constructor(name, field, trigger, cmp, phone, email, message) {
@@ -39,7 +39,7 @@ class Alarm {
   }
 }
 
-exports.DB = class DB extends wsock.DBIF {
+exports.DB = class DB extends db_abstract.DBIF {
     constructor(fields) {
         super();
 

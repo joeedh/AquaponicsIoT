@@ -1,43 +1,6 @@
 "use strict";
 
-var cconst = {
-  PORT: 1337,
-  VERSION: 0.001
-} //require('./const');
-
-var DBIF = exports.DBIF = class DBIF {
-  getAlarms() {
-    throw new Error("implement me!");
-  }
-
-  addAlarm(name, field, trigger, cmp) {
-    throw new Error("implement me!");
-  }
-
-  updateAlarms(alarms) {
-    throw new Error("implement me!");
-  }
-
-  save() {
-    throw new Error("implement me!");
-  }
-
-  getFieldNames() {
-    throw new Error("implement me!");
-  }
-
-  getFieldMeta(field) {
-    throw new Error("implement me!");
-  }
-
-  getFieldData(field, start_time, end_time) {
-    throw new Error("implement me!");
-  }
-
-  addFieldData(field, time, value) {
-    throw new Error("implement me!");
-  }
-}
+var config = require('./config');
 
 exports.handlers = {
   getAlarms: function (db, req, send) {
@@ -68,7 +31,7 @@ exports.handlers = {
 
     send({
       command: "getMeta",
-      version: cconst.VERSION,
+      version: config.VERSION,
       fields: fields
     });
   },
@@ -97,9 +60,9 @@ var fs = require('fs');
 
 exports.startServer = function servServer(servarg, db) {
   var serv = exports.serv = !servarg ? http.createServer() : servarg;
-  console.log("Listening on port", cconst.PORT);
+  console.log("Listening on port", config.PORT);
 
-  serv.listen(cconst.PORT);
+  serv.listen(config.PORT);
   var wsserver = new ws.server({
     httpServer: serv,
     autoAcceptConnections: true

@@ -2,6 +2,12 @@
 function domodule(exports) {
   "use strict";
 
+  exports.PORT = 1337;
+  exports.VERSION =  0.001;
+
+  exports.DOCROOT = "/node_app_slot/";
+  exports.ALARMFILE = "./alarms.json";
+
   exports.TwilioUser = "joeedh@gmail.com";
   exports.TwilioPassword = "&IOT_AquaPonics1!";
   exports.TwilioNumber = "19165426093"; //phone number

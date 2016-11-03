@@ -35,7 +35,7 @@ var db = exports.db = new (require('./db').DB)([
 
 // Set this to the ip address of your board (not 127.0.0.1)
 //var ipAddress = '172.16.0.134'; 
-var ipAddress = '192.168.1.71';
+//var ipAddress = '192.168.1.71';
 
 var mraa = require('mraa'); //require mraa
 var math = require('mathjs');
@@ -44,13 +44,13 @@ console.log('MRAA Version: ' + mraa.getVersion()); //write the mraa version to t
 // Start by loading in some data
 var fs = require('fs');
 
-var DOCROOT = "/node_app_slot/";
+var DOCROOT = config.DOCROOT;
 var aquaponicPage = fs.readFileSync(DOCROOT + 'aquaponic.html');
 
 // Insert the ip address in the code in the page
 
 //aquaponicPage = String(aquaponicPage).replace(/172.16.0.210/, ipAddress);
-aquaponicPage = String(aquaponicPage).replace(/192.168.1.71/, ipAddress);
+//aquaponicPage = String(aquaponicPage).replace(/192.168.1.71/, ipAddress);
 
 //var analogPin0 = new mraa.Aio(0);
 //
@@ -267,5 +267,5 @@ if (1) {
       //}
     });
 
-  serv.listen(1337, ipAddress);
+  serv.listen(config.PORT);
 }
