@@ -1,6 +1,7 @@
 //global alias to module
 //this is for debugging purposes only, do not reference this variable in code
 var _client = undefined;
+var name_val;
 
 requirejs.config({
   waitSeconds : 45
@@ -35,6 +36,9 @@ define([
         }
 
         this.drawLegend(canvas, g);
+//***          
+        this.showvalues(canvas, g);  
+//***          
       }
 
       drawLegend(canvas, g) {
@@ -46,8 +50,8 @@ define([
         g.font="50px Ariel";
 
         for (var graph of this.graphs) {
-          var w = 0.4, h = 0.05;
-
+          var w = 0.4, h = 0.05;              
+            
           _appstate.drawText(g, graph.name, x, y, graph.color);
 
           y += 0.1;
@@ -56,6 +60,34 @@ define([
         g.restore();
       }
 
+//*** mm
+      showvalues(canvas, g) {
+//        var x = 1.05;
+//        var y = 0.5;
+        var x = 1.2;
+        var y = 0.5;
+
+        g.save();
+        g.lineWidth *= 5.0;
+        g.font="50px Ariel";
+
+        for (var graph of this.graphs) {
+          var w = 0.4, h = 0.05;              
+            
+//          _appstate.drawText(g, 123, x, y, graph.color);
+  //          var a = graph.data[0];
+//          _appstate.drawText(g, a[1], x, y, graph.color);
+          _appstate.drawText(g, graph.data[0], x, y, graph.color);
+
+          y += 0.1;
+        }
+
+        g.restore();
+      }
+//***        
+        
+        
+        
       update(appstate) {
         for (var graph of this.graphs) {
           graph.update(appstate);
@@ -117,6 +149,10 @@ define([
             }
             
             for (var data of this.data) {
+                
+//**                
+//                console.log("this is a test");            
+                
                 var x = this.off[0] + data[0]*this.unit.scale[0];
                 var y = this.off[1] + data[1]*this.unit.scale[1];
                 
@@ -130,6 +166,8 @@ define([
             
             g.stroke();
             g.restore();
+//****            
+//            _appstate.drawText(g, data[0]*this.unit.scale[0], x, y, graph.color);           
         }
 
       update(appstate) {
@@ -273,6 +311,10 @@ define([
           return ret;
         }
 
+        
+        // get the allarm settings 
+        
+        
         makeGUI() {
           this._new_alarm_name = "";
           this._new_alarm_field = "";

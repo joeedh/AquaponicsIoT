@@ -1,4 +1,4 @@
-
+"use strict"
 var DBIF = exports.DBIF = class DBIF {
   getAlarms() {
     throw new Error("implement me!");

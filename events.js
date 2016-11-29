@@ -29,7 +29,6 @@ exports.update = function(db, sensors) {
     var ok = !cmps[alarm.cmp](a, b);
 
     var msg;
-
     if (!ok && alarm.enabled) {
       logger.log("Alarm '" + alarm.name + "' triggered with value " + a + ", trigger was " + b + ".");
       msg = alarm.field + " alarm '" + alarm.name + "' triggered.  " + alarm.field + " is " + a + ".";

@@ -31,10 +31,8 @@ var TwilioSMS = exports.TwilioSMS = class TwilioSMS {
       // Twilio Credentials
       var accountSid = cfg.TwilioSID;
       var authToken = cfg.TwilioAuthToken;
-
-      //require the Twilio module and create a REST client
+        //require the Twilio module and create a REST client
       var client = require('twilio')(accountSid, authToken);
-
       client.messages.create({
         to: number,
         from: cfg.TwilioNumber,
