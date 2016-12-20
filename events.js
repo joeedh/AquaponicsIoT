@@ -49,7 +49,7 @@ exports.update = function(db, sensors) {
     db.save();
 
     if (alarm.phone) {
-      sms.manager.send(alarm.phone, msg);
+//      sms.manager.send(alarm.phone, msg);
     }
   }
 };

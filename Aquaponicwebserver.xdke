@@ -11,20 +11,20 @@
   "iot-tab": {
     "fileStatus": {
       "Aquaponicwebserver.xdk": {
-        "previousModTime": 1474164468000,
-        "modified": 1474164468000,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": "Aquaponicwebserver.xdk"
       },
       "Aquaponicwebserver.xdke": {
-        "previousModTime": 1476744487004,
-        "modified": 1476744487004,
+        "previousModTime": 1481063526503,
+        "modified": 1481063526503,
         "seen": true,
         "name": "Aquaponicwebserver.xdke"
       },
       "icon.png": {
-        "previousModTime": 1474164466000,
-        "modified": 1474164466000,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "icon.png"
       },
@@ -35,344 +35,344 @@
         "name": "lightsensor.html"
       },
       "main.js": {
-        "previousModTime": 1476744315870,
-        "modified": 1476744315870,
+        "previousModTime": 1480811801903,
+        "modified": 1480811801903,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1476736463714,
-        "modified": 1476736463714,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "package.json"
       },
       "README.md": {
-        "previousModTime": 1474164466000,
-        "modified": 1474164466000,
+        "previousModTime": 1479759556480,
+        "modified": 1479759556480,
         "seen": true,
         "name": "README.md"
       },
       "xdk/project-info.json": {
-        "previousModTime": 1474164466000,
-        "modified": 1474164466000,
+        "previousModTime": 1479759556524,
+        "modified": 1479759556524,
         "seen": true,
         "name": "xdk/project-info.json"
       },
       "aquaponic.html": {
-        "previousModTime": 1476395445237,
-        "modified": 1476395445237,
+        "previousModTime": 1479759556480,
+        "modified": 1479759556480,
         "seen": true,
         "name": "aquaponic.html"
       },
       "const.js": {
-        "previousModTime": 1475873125392,
-        "modified": 1475873125392,
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
         "seen": true,
         "name": "const.js"
       },
       "db.js": {
-        "previousModTime": 1476744139945,
-        "modified": 1476744139945,
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
         "seen": true,
         "name": "db.js"
       },
       "tinyrequire_node.js": {
-        "previousModTime": 1475872434179,
-        "modified": 1475872434179,
+        "previousModTime": 1479759556524,
+        "modified": 1479759556524,
         "seen": true,
         "name": "tinyrequire_node.js"
       },
       "wsock.js": {
-        "previousModTime": 1476744127201,
-        "modified": 1476744127201,
+        "previousModTime": 1479759556524,
+        "modified": 1479759556524,
         "seen": true,
         "name": "wsock.js"
       },
       "framework/API.md": {
-        "previousModTime": 1474562634000,
-        "modified": 1474562634000,
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
         "seen": true,
         "name": "framework/API.md"
       },
       "framework/CHANGES.md": {
-        "previousModTime": 1474300348000,
-        "modified": 1474300348000,
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
         "seen": true,
         "name": "framework/CHANGES.md"
       },
       "framework/compiled_numeric.js": {
-        "previousModTime": 1475872462721,
-        "modified": 1475872462721,
+        "previousModTime": 1479759556488,
+        "modified": 1479759556488,
         "seen": true,
         "name": "framework/compiled_numeric.js"
       },
       "framework/console.js": {
-        "previousModTime": 1476740857287,
-        "modified": 1476740857287,
+        "previousModTime": 1479759556488,
+        "modified": 1479759556488,
         "seen": true,
         "name": "framework/console.js"
       },
       "framework/controller.js": {
-        "previousModTime": 1476740842885,
-        "modified": 1476740842885,
+        "previousModTime": 1479759556488,
+        "modified": 1479759556488,
         "seen": true,
         "name": "framework/controller.js"
       },
       "framework/d3.js": {
-        "previousModTime": 1474565426000,
-        "modified": 1474565426000,
+        "previousModTime": 1479759556488,
+        "modified": 1479759556488,
         "seen": true,
         "name": "framework/d3.js"
       },
       "framework/d3.min.js": {
-        "previousModTime": 1474565429000,
-        "modified": 1474565429000,
+        "previousModTime": 1479759556492,
+        "modified": 1479759556492,
         "seen": true,
         "name": "framework/d3.min.js"
       },
       "framework/d3.zip": {
-        "previousModTime": 1475875130117,
-        "modified": 1475875130117,
+        "previousModTime": 1479759556504,
+        "modified": 1479759556504,
         "seen": true,
         "name": "framework/d3.zip"
       },
       "framework/dat.js": {
-        "previousModTime": 1476740849827,
-        "modified": 1476740849827,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/dat.js"
       },
       "framework/entry_point.js": {
-        "previousModTime": 1475872462747,
-        "modified": 1475872462747,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/entry_point.js"
       },
       "framework/events.js": {
-        "previousModTime": 1475872462756,
-        "modified": 1475872462756,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/events.js"
       },
       "framework/gen_vectormath.js": {
-        "previousModTime": 1475872462766,
-        "modified": 1475872462766,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/gen_vectormath.js"
       },
       "framework/isect.js": {
-        "previousModTime": 1475872462774,
-        "modified": 1475872462774,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/isect.js"
       },
       "framework/jobs.js": {
-        "previousModTime": 1475872462779,
-        "modified": 1475872462779,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/jobs.js"
       },
       "framework/LICENSE": {
-        "previousModTime": 1467050921000,
-        "modified": 1467050921000,
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
         "seen": true,
         "name": "framework/LICENSE"
       },
       "framework/linear_algebra.js": {
-        "previousModTime": 1475872462783,
-        "modified": 1475872462783,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/linear_algebra.js"
       },
       "framework/math.js": {
-        "previousModTime": 1475872462787,
-        "modified": 1475872462787,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/math.js"
       },
       "framework/matrixmath.js": {
-        "previousModTime": 1475872462791,
-        "modified": 1475872462791,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/matrixmath.js"
       },
       "framework/notification.js": {
-        "previousModTime": 1475872462799,
-        "modified": 1475872462799,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/notification.js"
       },
       "framework/numeric.js": {
-        "previousModTime": 1475872462806,
-        "modified": 1475872462806,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/numeric.js"
       },
       "framework/octree.js": {
-        "previousModTime": 1475872462810,
-        "modified": 1475872462810,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/octree.js"
       },
       "framework/parseutil.js": {
-        "previousModTime": 1475872462814,
-        "modified": 1475872462814,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/parseutil.js"
       },
       "framework/polyfill.js": {
-        "previousModTime": 1476740884890,
-        "modified": 1476740884890,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/polyfill.js"
       },
       "framework/README.md": {
-        "previousModTime": 1472585189000,
-        "modified": 1472585189000,
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
         "seen": true,
         "name": "framework/README.md"
       },
       "framework/require.js": {
-        "previousModTime": 1475872462831,
-        "modified": 1475872462831,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/require.js"
       },
       "framework/sampling.js": {
-        "previousModTime": 1475872462835,
-        "modified": 1475872462835,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/sampling.js"
       },
       "framework/screen.js": {
-        "previousModTime": 1475872462839,
-        "modified": 1475872462839,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/screen.js"
       },
       "framework/simplemesh.js": {
-        "previousModTime": 1475872462853,
-        "modified": 1475872462853,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/simplemesh.js"
       },
       "framework/slicer.js": {
-        "previousModTime": 1475872462857,
-        "modified": 1475872462857,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/slicer.js"
       },
       "framework/stl.js": {
-        "previousModTime": 1475872462860,
-        "modified": 1475872462860,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/stl.js"
       },
       "framework/struct.js": {
-        "previousModTime": 1475872462864,
-        "modified": 1475872462864,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "framework/struct.js"
       },
       "framework/sym.js": {
-        "previousModTime": 1475872462867,
-        "modified": 1475872462867,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "framework/sym.js"
       },
       "framework/tinyrequire.js": {
-        "previousModTime": 1475872462871,
-        "modified": 1475872462871,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "framework/tinyrequire.js"
       },
       "framework/toolsystem.js": {
-        "previousModTime": 1475872462874,
-        "modified": 1475872462874,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "framework/toolsystem.js"
       },
       "framework/trigrid.js": {
-        "previousModTime": 1475872462878,
-        "modified": 1475872462878,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "framework/trigrid.js"
       },
       "framework/typesystem.js": {
-        "previousModTime": 1476740818922,
-        "modified": 1476740818922,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "framework/typesystem.js"
       },
       "framework/util.js": {
-        "previousModTime": 1476740905061,
-        "modified": 1476740905061,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "framework/util.js"
       },
       "framework/vectormath.js": {
-        "previousModTime": 1475872462890,
-        "modified": 1475872462890,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "framework/vectormath.js"
       },
       "framework/_old_vectormath.js": {
-        "previousModTime": 1475872462898,
-        "modified": 1475872462898,
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
         "seen": true,
         "name": "framework/_old_vectormath.js"
       },
       "framework/shaders/simple.glsl": {
-        "previousModTime": 1475872462848,
-        "modified": 1475872462848,
+        "previousModTime": 1479759556508,
+        "modified": 1479759556508,
         "seen": true,
         "name": "framework/shaders/simple.glsl"
       },
       "client.js": {
-        "previousModTime": 1476744481955,
-        "modified": 1476744481955,
+        "previousModTime": 1481063547919,
+        "modified": 1481063547919,
         "seen": true,
         "name": "client.js"
       },
       "require.js": {
-        "previousModTime": 1476394161485,
-        "modified": 1476394161485,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "require.js"
       },
       ".gitignore": {
-        "previousModTime": 1476491064219,
-        "modified": 1476491064219,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".gitignore"
       },
       "addreviations.md": {
-        "previousModTime": 1476736701456,
-        "modified": 1476736701456,
+        "previousModTime": 1479759556480,
+        "modified": 1479759556480,
         "seen": true,
         "name": "addreviations.md"
       },
       "alarms.json": {
-        "previousModTime": 1476744387488,
-        "modified": 1476744387488,
+        "previousModTime": 1479759556480,
+        "modified": 1479759556480,
         "seen": true,
         "name": "alarms.json"
       },
       "config.js": {
-        "previousModTime": 1476740687125,
-        "modified": 1476740687125,
+        "previousModTime": 1480811255897,
+        "modified": 1480811255897,
         "seen": true,
         "name": "config.js"
       },
       "connect_ssh.sh": {
-        "previousModTime": 1476486213627,
-        "modified": 1476486213627,
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
         "seen": true,
         "name": "connect_ssh.sh"
       },
       "events.js": {
-        "previousModTime": 1476744240877,
-        "modified": 1476744240877,
+        "previousModTime": 1480811379543,
+        "modified": 1480811379543,
         "seen": true,
         "name": "events.js"
       },
@@ -383,14 +383,14 @@
         "name": "homemartinaquaponicaquaponic.log"
       },
       "logger.js": {
-        "previousModTime": 1476740696384,
-        "modified": 1476740696384,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "logger.js"
       },
       "logger.jss.js": {
-        "previousModTime": 1476737052662,
-        "modified": 1476737052662,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "logger.jss.js"
       },
@@ -413,8 +413,8 @@
         "name": "log_log.txt"
       },
       "postupload.sh": {
-        "previousModTime": 1476488466885,
-        "modified": 1476488466885,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "postupload.sh"
       },
@@ -425,102 +425,316 @@
         "name": "sensors.log"
       },
       "sim.js": {
-        "previousModTime": 1476738679762,
-        "modified": 1476738679762,
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
         "seen": true,
         "name": "sim.js"
       },
       "sms.js": {
-        "previousModTime": 1476740700646,
-        "modified": 1476740700646,
+        "previousModTime": 1479767789399,
+        "modified": 1479767789399,
         "seen": true,
         "name": "sms.js"
       },
       "tar.out": {
-        "previousModTime": 1476487429843,
-        "modified": 1476487429843,
+        "previousModTime": 1479759556524,
+        "modified": 1479759556524,
         "seen": true,
         "name": "tar.out"
       },
       "upload.bat": {
-        "previousModTime": 1476487584597,
-        "modified": 1476487584597,
+        "previousModTime": 1479759556524,
+        "modified": 1479759556524,
         "seen": true,
         "name": "upload.bat"
       },
       "upload.sh": {
-        "previousModTime": 1476486695746,
-        "modified": 1476486695746,
+        "previousModTime": 1479759556524,
+        "modified": 1479759556524,
         "seen": true,
         "name": "upload.sh"
       },
       ".idea/.name": {
-        "previousModTime": 1476485920762,
-        "modified": 1476485920762,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/.name"
       },
       ".idea/Aquaponicwebserver.iml": {
-        "previousModTime": 1476486026760,
-        "modified": 1476486026760,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/Aquaponicwebserver.iml"
       },
       ".idea/deployment.xml": {
-        "previousModTime": 1476485920919,
-        "modified": 1476485920919,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/deployment.xml"
       },
       ".idea/encodings.xml": {
-        "previousModTime": 1476485920871,
-        "modified": 1476485920871,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/encodings.xml"
       },
       ".idea/jsLibraryMappings.xml": {
-        "previousModTime": 1476486026807,
-        "modified": 1476486026807,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/jsLibraryMappings.xml"
       },
       ".idea/misc.xml": {
-        "previousModTime": 1476485932084,
-        "modified": 1476485932084,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/misc.xml"
       },
       ".idea/modules.xml": {
-        "previousModTime": 1476485920902,
-        "modified": 1476485920902,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/modules.xml"
       },
       ".idea/vcs.xml": {
-        "previousModTime": 1476492221190,
-        "modified": 1476492221190,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/vcs.xml"
       },
       ".idea/watcherTasks.xml": {
-        "previousModTime": 1476489099753,
-        "modified": 1476489099753,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/watcherTasks.xml"
       },
       ".idea/workspace.xml": {
-        "previousModTime": 1476740958391,
-        "modified": 1476740958391,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/workspace.xml"
       },
       ".idea/libraries/Aquaponicwebserver_node_modules.xml": {
-        "previousModTime": 1476486026894,
-        "modified": 1476486026894,
+        "previousModTime": 1479759556424,
+        "modified": 1479759556424,
         "seen": true,
         "name": ".idea/libraries/Aquaponicwebserver_node_modules.xml"
+      },
+      "calabration.ods": {
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
+        "seen": true,
+        "name": "calabration.ods"
+      },
+      "config_generic.js": {
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
+        "seen": true,
+        "name": "config_generic.js"
+      },
+      "config_generic.js~": {
+        "previousModTime": 1479759556484,
+        "modified": 1479759556484,
+        "seen": true,
+        "name": "config_generic.js~"
+      },
+      "db_abstract.js": {
+        "previousModTime": 1479760422924,
+        "modified": 1479760422924,
+        "seen": true,
+        "name": "db_abstract.js"
+      },
+      "requirejs_bypass.js": {
+        "previousModTime": 1479759556512,
+        "modified": 1479759556512,
+        "seen": true,
+        "name": "requirejs_bypass.js"
+      },
+      "Documentation/20161119_100805.jpg": {
+        "previousModTime": 1479759556460,
+        "modified": 1479759556460,
+        "seen": true,
+        "name": "Documentation/20161119_100805.jpg"
+      },
+      "Documentation/Aquaponic System Documentation.odt": {
+        "previousModTime": 1479759556480,
+        "modified": 1479759556480,
+        "seen": true,
+        "name": "Documentation/Aquaponic System Documentation.odt"
+      },
+      "Documentation/2015-04-23 20.41.36.jpg": {
+        "previousModTime": 1429846896000,
+        "modified": 1429846896000,
+        "seen": true,
+        "name": "Documentation/2015-04-23 20.41.36.jpg"
+      },
+      "References/1130 User Guide - Phidgets Support.html": {
+        "previousModTime": 1480224503182,
+        "modified": 1480224503182,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support.html"
+      },
+      "References/1130 User Guide - Phidgets Support_files/1130.jpg": {
+        "previousModTime": 1480224502930,
+        "modified": 1480224502930,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/1130.jpg"
+      },
+      "References/1130 User Guide - Phidgets Support_files/1cd44f4e775ac8e112f12f12f2b8cc7d.png": {
+        "previousModTime": 1480224503002,
+        "modified": 1480224503002,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/1cd44f4e775ac8e112f12f12f2b8cc7d.png"
+      },
+      "References/1130 User Guide - Phidgets Support_files/200px-Analoginput.jpg": {
+        "previousModTime": 1480224503014,
+        "modified": 1480224503014,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/200px-Analoginput.jpg"
+      },
+      "References/1130 User Guide - Phidgets Support_files/3a472b1377500a36c32b418f98989f17.png": {
+        "previousModTime": 1480224502946,
+        "modified": 1480224502946,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/3a472b1377500a36c32b418f98989f17.png"
+      },
+      "References/1130 User Guide - Phidgets Support_files/400px-1018_2_Control_Panel_Screen.jpg": {
+        "previousModTime": 1480224502982,
+        "modified": 1480224502982,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/400px-1018_2_Control_Panel_Screen.jpg"
+      },
+      "References/1130 User Guide - Phidgets Support_files/400px-1130_0_Advanced_Sensor_Form_Screen.jpg": {
+        "previousModTime": 1480224502998,
+        "modified": 1480224502998,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/400px-1130_0_Advanced_Sensor_Form_Screen.jpg"
+      },
+      "References/1130 User Guide - Phidgets Support_files/400px-1130_0_Connecting_The_Hardware.jpg": {
+        "previousModTime": 1480224503006,
+        "modified": 1480224503006,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/400px-1130_0_Connecting_The_Hardware.jpg"
+      },
+      "References/1130 User Guide - Phidgets Support_files/400px-Sensor_InterfaceKit_Screen_421.jpg": {
+        "previousModTime": 1480224502890,
+        "modified": 1480224502890,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/400px-Sensor_InterfaceKit_Screen_421.jpg"
+      },
+      "References/1130 User Guide - Phidgets Support_files/941b1364f8fd7d54c6c596f5ad0b226a.png": {
+        "previousModTime": 1480224502938,
+        "modified": 1480224502938,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/941b1364f8fd7d54c6c596f5ad0b226a.png"
+      },
+      "References/1130 User Guide - Phidgets Support_files/By-nc-nd-88x31.png": {
+        "previousModTime": 1480224502922,
+        "modified": 1480224502922,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/By-nc-nd-88x31.png"
+      },
+      "References/1130 User Guide - Phidgets Support_files/facebook_16.png": {
+        "previousModTime": 1480224502954,
+        "modified": 1480224502954,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/facebook_16.png"
+      },
+      "References/1130 User Guide - Phidgets Support_files/ga.js": {
+        "previousModTime": 1480224503166,
+        "modified": 1480224503166,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/ga.js"
+      },
+      "References/1130 User Guide - Phidgets Support_files/index_010.php": {
+        "previousModTime": 1480224502514,
+        "modified": 1480224502514,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/index_010.php"
+      },
+      "References/1130 User Guide - Phidgets Support_files/load_002.css": {
+        "previousModTime": 1480224502486,
+        "modified": 1480224502486,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/load_002.css"
+      },
+      "References/1130 User Guide - Phidgets Support_files/load_002.php": {
+        "previousModTime": 1480224502474,
+        "modified": 1480224502474,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/load_002.php"
+      },
+      "References/1130 User Guide - Phidgets Support_files/load_003.php": {
+        "previousModTime": 1480224502510,
+        "modified": 1480224502510,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/load_003.php"
+      },
+      "References/1130 User Guide - Phidgets Support_files/load_004.php": {
+        "previousModTime": 1480224502534,
+        "modified": 1480224502534,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/load_004.php"
+      },
+      "References/1130 User Guide - Phidgets Support_files/load_005.php": {
+        "previousModTime": 1480224502542,
+        "modified": 1480224502542,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/load_005.php"
+      },
+      "References/1130 User Guide - Phidgets Support_files/load_006.php": {
+        "previousModTime": 1480224502554,
+        "modified": 1480224502554,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/load_006.php"
+      },
+      "References/1130 User Guide - Phidgets Support_files/load.css": {
+        "previousModTime": 1480224502446,
+        "modified": 1480224502446,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/load.css"
+      },
+      "References/1130 User Guide - Phidgets Support_files/load.php": {
+        "previousModTime": 1480224502462,
+        "modified": 1480224502462,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/load.php"
+      },
+      "References/1130 User Guide - Phidgets Support_files/logo.jpg": {
+        "previousModTime": 1480224502886,
+        "modified": 1480224502886,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/logo.jpg"
+      },
+      "References/1130 User Guide - Phidgets Support_files/menu.css": {
+        "previousModTime": 1480224502470,
+        "modified": 1480224502470,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/menu.css"
+      },
+      "References/1130 User Guide - Phidgets Support_files/Ph.jpg": {
+        "previousModTime": 1480224502874,
+        "modified": 1480224502874,
+        "seen": true,
+        "name": "References/1130 User Guide - Phidgets Support_files/Ph.jpg"
+      },
+      "config_joe.js": {
+        "previousModTime": 1478836850333,
+        "modified": 1478836850333,
+        "seen": true,
+        "name": "config_joe.js"
+      },
+      "config_mm.js": {
+        "previousModTime": 1478837245514,
+        "modified": 1478837245514,
+        "seen": true,
+        "name": "config_mm.js"
       }
     },
-    "boardFileStatus": {}
+    "boardFileStatus": {
+      "client.js": {
+        "previousModTime": 1481063551305
+      }
+    }
   }
 }

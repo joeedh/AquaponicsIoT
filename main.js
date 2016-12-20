@@ -52,7 +52,7 @@ read_sensors();
 function read_sensors() {
   var time_as_num = (new Date()).valueOf();
   temp = read_temp();
-//    console.log(temp);
+//  console.log(temp);
   var ph = read_ph(temp);
   var orp = read_orp();
 
@@ -100,11 +100,19 @@ function analog_read(reading_array,pin)
 
 function read_temp() {
   var analogValue = math.round(analog_read(raw_temps, analogPin2)); //read the value of the analog pin
-//    console.log(analogValue);
+//    console.log("analog %s",analogValue);
 //  var indexValue = analogValue - 121; //calibrate the analog pin reading with the lookup table
   var indexValue = analogValue - 83; //calibrate the analog pin reading with the lookup table
-  //console.log(indexValue); //write the value of the analog pin to the console
+//  console.log("length %s",temps.length); 
+  if (indexValue > temps.length){
+      indexValue = temps.length;
+  }
+  if (indexValue < 0){
+      indexValue = 0;
+  }
+//  console.log("index %s", indexValue); //write the value of the analog pin to the console
   var therm = temps[indexValue];
+//  console.log("therm %s", therm);
   return (therm);
 }
 

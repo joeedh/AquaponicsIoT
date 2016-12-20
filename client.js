@@ -77,7 +77,20 @@ define([
 //          _appstate.drawText(g, 123, x, y, graph.color);
   //          var a = graph.data[0];
 //          _appstate.drawText(g, a[1], x, y, graph.color);
-          _appstate.drawText(g, graph.data[0], x, y, graph.color);
+//                var z = this.off[1] + data[1]*this.unit.scale[1];
+//            var z=graph.off[0];
+            var a = graph.data.length;
+//            var b=graph.data[a-1];
+//            var z=b[1];
+            
+//            var b, z = graph.data[a-1];
+            var z=graph.data[a-1];
+//            var z=graph.data[a-1].value;
+//            var z=graph.data;
+            
+//            _appstate.drawText(g, graph.data[0], x, y, graph.color);
+//            alert(g);
+            _appstate.drawText(g, z, x, y, graph.color);
 
           y += 0.1;
         }
@@ -149,10 +162,7 @@ define([
             }
             
             for (var data of this.data) {
-                
-//**                
-//                console.log("this is a test");            
-                
+                                
                 var x = this.off[0] + data[0]*this.unit.scale[0];
                 var y = this.off[1] + data[1]*this.unit.scale[1];
                 
